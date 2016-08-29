@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html style="overflow:hidden">
+<head>
+    <meta charset="utf-8" />
+    <title>ninjaScroll2.Windows</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- ninjaScroll2.Windows references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <style id="myStyle">
+        body {
+            overflow: scroll;
+        }
+        .editor {
+            width: 800px;
+            margin: auto;
+        }
+        .watermark img {
+            position: fixed; 
+            top: 3vh;
+            right: 3vw;
+            width: 160px; height: 120px;
+        }
+
+        .top {
+            position: fixed; 
+            top: 2vh;
+            opacity: 0.5;
+        } 
+        
+        .right {
+            position: fixed; 
+            right: 2vw;
+        } 
+        
+        .bottom {
+            position: fixed; 
+            bottom: 2vh;
+            opacity: 0.5;
+        } 
+        
+        .left {
+            position: fixed;
+            left: 2vw;
+        } 
+                
+        .center {
+            position: fixed; 
+            right: 50vw;
+        } 
+        
+        .middle {
+            position: fixed; 
+            top: 50vh;
+            opacity: 0.5;
+        } 
+    </style>
+</head>
+<body>
+    <div id="myDiv" style="position:absolute;height:100%;width:100%;">
+        <div style="position:absolute;top:2vh;left:2vw">top left</div>
+        <div style="position:absolute;top:2vh;right:50vw">top center</div>
+        <div style="position:absolute;right:2vw">top right</div>
+
+        <div style="position:absolute;top:50vh;left:2vw">middle left</div>
+        <div style="position:absolute;top:50vh;right:50vw">middle center</div>
+        <div style="position:absolute;top:50vh;right:2vw">middle right</div>
+
+        <div style="position:absolute;bottom:2vh;left:2vw">bottom left</div>
+        <div style="position:absolute;bottom:2vh;right:50vw">bottom center</div>
+        <div style="position:absolute;bottom:2vh;right:2vw">bottom right</div>
+    </div>
+
+    <!--<div class="top left">top left</div>
+    <div class="top center">top center</div>
+    <div class="top right">top right</div>
+
+    <div class="middle left">middle left</div>
+    <div class="middle center">middle center</div>
+    <div class="middle right">middle right</div>
+
+    <div class="bottom left">bottom left</div>
+    <div class="bottom center">bottom center</div>
+    <div class="bottom right">bottom right</div>-->
+
+
+    <div class="editor">
+        Content  0%<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />
+        Content 10%<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />
+        Content 20%<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />
+        Content 30%<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />
+        Content 40%<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />
+        Content 50%<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />
+        Content 60%<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />
+        Content 70%<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />
+        Content 80%<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />
+        Content 90%<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />---<br />
+        Content 100%<br />
+    </div>
+</body>
+</html>
