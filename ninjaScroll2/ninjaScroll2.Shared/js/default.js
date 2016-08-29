@@ -12,7 +12,8 @@
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
                 window.onscroll = function (evt) {
-                    document.getElementById("myDiv").style.height = window.innerHeight + window.pageYOffset + "px";
+                    var myDiv = document.getElementById("myDiv");
+                    myDiv.style.top = window.pageYOffset+"px";
                 }
                 
                 inputPane.onshowing = function (eventArgs) {
